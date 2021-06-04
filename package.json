@@ -1,0 +1,35 @@
+{
+  "name": "lprvw",
+  "displayName": "Live HTML Preview",
+  "publisher": "RomanKoblov",
+  "license": "MIT",
+  "description": "Live HTML Preview",
+  "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/romankoblov/lprvw"
+  },
+  "keywords": [
+    "html",
+    "live",
+    "preview"
+  ],
+  "engines": {
+    "vscode": "^1.50.0"
+  },
+  "activationEvents": [
+    "onCommand:lprvw.sidePreview"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "lprvw.sidePreview",
+        "title": "Live HTML Preview"
+      }
+    ]
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.50.0"
+  }
+}
